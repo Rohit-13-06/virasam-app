@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "virasam"
+version = "1.0.0"
+description = "VIRASAM: The Living Cultural Archive, a community-driven platform for preserving cultural heritage."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "AGPL-3.0-or-later" }
+authors = [
+  { name = "VIRASAM Contributors", email = "support@virasam.org" }
+]
+dependencies = [
+  "streamlit>=1.28.0",
+  "supabase>=1.0.4",
+  "bcrypt>=4.0.1",
+  "requests>=2.31.0",
+  "pandas>=2.1.0",
+  "numpy>=1.24.3"
+]
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+select = ["E", "F", "W"]
